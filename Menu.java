@@ -1,89 +1,29 @@
-import java.util.Scanner;
+
 public class Menu {
-         static Scanner scanner = new Scanner(System.in);
 
-        // Метод, показывающий главное меню программы
-        public static void showMainMenu() {
-            System.out.println("Введите цифру необходимого действия: \n" +
-                    "1. Показать весь питомник\n" +
-                    "2. Показать только выбранный вид животных\n" +
-                    "3. Увидеть список команд, выполняемых животным\n" +
-                    "4. Обучить животное новым командам\n" +
-                    "5. Завести новое животное");
-        }
+    public static final String Q = "q";
+    public static final String QUITE = "Для выхода введите " + Q;
+    public static final String NAME = "Нипишите имя животного";
+    public static final String YEAR = "Год рождения до 2023";
+    public static final String MONTH = "Месяц рождения от 01-12";
+    public static final String DAY = "День рождения от 01-31";
+    public static final String ERROR = "Неверная команда";
+    public static final String DELEETEANIMAL = "Введите id животного (из списка выше) для удаления";
+    public static final String COMMAND = "Выберете команду для добавления";
+    public static final String IDANIMAL = "Введите id животного";
+    public static final String NOTCOMMAND = "Животное пока не обучено командам";
+    public static final String LISTANIMAL = "\n1. Кот;\n" +
+            "2. Собака; \n" +
+            "3. Хомяк; \n" +
+            "4. Осел; \n" +
+            "5. Верблюд;\n" +
+            "6. Лошадь \n";
+    public static final String STARTMENU = "\nВыбери тип животного и что надо сделать:\n" +
+            "1. Добавить животное \n" +
+            "2. Вывести животное \n" +
+            "3. Посмотреть всех животных выбранного вида \n" +
+            "4. Посмотреть список команд\n" +
+            "5. Обучить животное команде \n" +
+            "6. Посмотреть команды выбранного животного\n";
 
-
-        public static void printOnlyThisClass(Farm<Animal> animalFarm) {
-            System.out.println("Выберите вид животных: \n" +
-                    "1. Домашние\n" +
-                    "2. Вьючные");
-            int userSelectedClass = scanner.nextInt();
-
-            switch (userSelectedClass) {
-                case 1:
-                    animalFarm.printOnlyThisClass(1);
-                    break;
-                case 2:
-                    animalFarm.printOnlyThisClass(2);
-                    break;
-            }
-        }
-
-        public static void Comands(){
-            System.out.println("Выберите тип животных: \n" +
-                    "1. Домашние\n" +
-                    "2. Вьючные");
-            int userSelectedClass = scanner.nextInt();
-
-            switch (userSelectedClass) {
-                int userSelected;
-                case 1:
-                    System.out.println("Выберите вид животных: \n" +
-                            "1. Кошки\n" +
-                            "2. Собаки\n" +
-                            "3. Хомяки\n");
-                    userSelected = scanner.nextInt();
-                    switch (userSelected) {
-                        case 1:
-                            Cat.Comands();
-                            break;
-                        case 2:
-                            Dog.Comands();
-                            break;
-                        case 3:
-                            Hamster.Comands();
-                            break;
-                    }
-                    break;
-                case 2:
-                    System.out.println("Выберите вид животных: \n" +
-                            "1. Верблюды\n" +
-                            "2. Ослы\n" +
-                            "3. Лошади\n");
-                    userSelected = scanner.nextInt();
-                    switch (userSelected) {
-                        case 1:
-                            Camel.Comands();
-                            break;
-                        case 2:
-                            Donkey.Comands();
-                            break;
-                        case 3:
-                            Horse.Comands();
-                            break;
-                    }
-                    break;
-            }
-
-        }
-
-        public static void newComand(){
-
-
-        }
-
-        public static void newAnimal(){
-
-        }
-    }
 }
