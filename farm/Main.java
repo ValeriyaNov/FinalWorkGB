@@ -1,5 +1,4 @@
-
-import farm.CreateAnimal;
+package farm;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,7 +6,7 @@ public class Main {
         CreateAnimal createAnimal = new CreateAnimal();
         createAnimal.randomAnimal();
 
-        FinalWorkGB.TerminalReader terminalReader = FinalWorkGB.TerminalReader.terminalReader();
+        TerminalReader terminalReader = TerminalReader.terminalReader();
         terminalReader.endLess();
 
     }

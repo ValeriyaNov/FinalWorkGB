@@ -1,0 +1,15 @@
+CREATE TABLE Животные (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  тип VARCHAR(50)
+);
+CREATE TABLE Вьючные_животные (
+  id INT PRIMARY KEY ,
+  вид VARCHAR(50),
+  AId INT,
+  FOREIGN KEY (Aid) REFERENCES Животные (id) ON DELETE CASCADE);
+  
+ CREATE TABLE Домашние_животные (
+  id INT PRIMARY KEY ,
+  вид VARCHAR(50),
+  AId INT,
+  FOREIGN KEY (Aid) REFERENCES Животные (id) ON DELETE CASCADE); 

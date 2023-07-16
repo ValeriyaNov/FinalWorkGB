@@ -1,3 +1,5 @@
+package farm;
+
 import java.time.LocalDate;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -18,38 +20,39 @@ import java.util.Scanner;
                     switch (numAnimal){
                         case 1:
                             System.out.println(Menu.NAME);
-                            String nameCat = scanner.nextLine();
+                            String nameCat = scanner.next();
+                            //int a = 7;
                             LocalDate birthDayCat = Date();
                             farm.AddCatInZoo(nameCat, birthDayCat);
                             break;
                         case 2:
                             System.out.println(Menu.NAME);
-                            String nameDog = scanner.nextLine();
+                            String nameDog = scanner.next();
                             LocalDate birthDayDog = Date();
                             farm.AddDogInZoo(nameDog, birthDayDog);
                             break;
 
                         case 3:
                             System.out.println(Menu.NAME);
-                            String nameHamster = scanner.nextLine();
+                            String nameHamster = scanner.next();
                             LocalDate birthDayHamster = Date();
                             farm.AddHamsterInZoo(nameHamster, birthDayHamster);
                             break;
                         case 4:
                             System.out.println(Menu.NAME);
-                            String nameDonkey = scanner.nextLine();
+                            String nameDonkey = scanner.next();
                             LocalDate birthDayDonkey = Date();
                             farm.AddDonkeyInZoo(nameDonkey, birthDayDonkey);
                             break;
                         case 5:
                             System.out.println(Menu.NAME);
-                            String nameCamel = scanner.nextLine();
+                            String nameCamel = scanner.next();
                             LocalDate birthDayCamel = Date();
                             farm.AddCamelInZoo(nameCamel, birthDayCamel);
                             break;
                         case 6:
                             System.out.println(Menu.NAME);
-                            String nameHorse = scanner.nextLine();
+                            String nameHorse = scanner.next();
                             LocalDate birthDayHorse = Date();
                             farm.AddHorseInZoo(nameHorse, birthDayHorse);
                             break;
@@ -160,15 +163,6 @@ import java.util.Scanner;
                             farm.setHamsterCommand(idH, petCommands.getCommand(idCommandHamster));
                             break;
                         case 4:
-                            farm.printCamel();
-                            System.out.println(Menu.IDANIMAL);
-                            int idCam = Digit();
-                            petCommands.printCommand();
-                            System.out.println(Menu.COMMAND);
-                            int idCommandCamel = Digit();
-                            farm.setCamelCommand(idCam, petCommands.getCommand(idCommandCamel));
-                            break;
-                        case 5:
                             farm.printDonkey();
                             System.out.println(Menu.IDANIMAL);
                             int idDon = Digit();
@@ -176,6 +170,16 @@ import java.util.Scanner;
                             System.out.println(Menu.COMMAND);
                             int idCommandDonkey = Digit();
                             farm.setDonkeyCommand(idDon, petCommands.getCommand(idCommandDonkey));
+                            break;
+
+                        case 5:
+                            farm.printCamel();
+                            System.out.println(Menu.IDANIMAL);
+                            int idCam = Digit();
+                            petCommands.printCommand();
+                            System.out.println(Menu.COMMAND);
+                            int idCommandCamel = Digit();
+                            farm.setCamelCommand(idCam, petCommands.getCommand(idCommandCamel));
                             break;
                         case 6:
                             farm.printHorses();

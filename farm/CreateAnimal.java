@@ -15,9 +15,29 @@ public class CreateAnimal {
             farm.AddCatInZoo(name, birthDayCat);
         }
         for (int i = 0; i < 5; i++) {
-            String name = "Horses" + i;
+            String name = "Horse" + i;
             LocalDate birthDayHorse = Date();
             farm.AddHorseInZoo(name, birthDayHorse);
+        }
+        for (int i = 0; i < 5; i++) {
+            String name = "Dog" + i;
+            LocalDate birthDayDog = Date();
+            farm.AddDogInZoo(name, birthDayDog);
+        }
+        for (int i = 0; i < 5; i++) {
+            String name = "Camel" + i;
+            LocalDate birthDayCamel = Date();
+            farm.AddCamelInZoo(name, birthDayCamel);
+        }
+        for (int i = 0; i < 5; i++) {
+            String name = "Hamster" + i;
+            LocalDate birthDayHamster = Date();
+            farm.AddHamsterInZoo(name, birthDayHamster);
+        }
+        for (int i = 0; i < 5; i++) {
+            String name = "Donkey" + i;
+            LocalDate birthDayDonkey = Date();
+            farm.AddDonkeyInZoo(name, birthDayDonkey);
         }
     }
 

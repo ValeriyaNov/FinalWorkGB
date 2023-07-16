@@ -1,5 +1,4 @@
-package FinalWorkGB;
-
+package farm;
 
 import java.util.Scanner;
 
