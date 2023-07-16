@@ -1,6 +1,6 @@
 package farm;
 
-import FinalWorkGB.Comands;
+import farm.Pet;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

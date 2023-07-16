@@ -1,5 +1,5 @@
+package farm;
 
-import farm.CreateAnimal;
 import java.time.LocalDate;
 import java.util.Random;
 
@@ -20,6 +20,7 @@ public class CreateAnimal {
             farm.AddHorseInZoo(name, birthDayHorse);
         }
     }
+
 
 
     static LocalDate Date() {
